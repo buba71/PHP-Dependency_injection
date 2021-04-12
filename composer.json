@@ -1,0 +1,32 @@
+{
+    "name": "ddelima/php-dependency_injection",
+    "description": "learn dependency injection",
+    "type": "php-learning",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David",
+            "email": "davdelima71@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "scripts": {
+        "test" : "vendor\\bin\\phpunit"
+    },
+    "require": {
+        "symfony/yaml": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "DDELIMA\\PHP\\DependencyInjection\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DDELIMA\\PHP\\DependencyInjection\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
